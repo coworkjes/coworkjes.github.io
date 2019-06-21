@@ -6,43 +6,128 @@
     <meta name="description" content="Společná kancelář v Jeseníku">
     <meta name="keywords" content="coworking, Jeseník, hub, kancelář">
     <meta name="author" content="coworkJes">
-    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Roboto:300&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>CoworkJes</title>
     <style>
       body {
-        font-family: 'Neucha', cursive;
-        color: #393939;
+        font-family: 'Roboto', sans-serif;
+        color: #7b7b7b;
         text-align: center;
         padding: 40px;
         margin: 0;
-        font-size: 24px;
+        font-size: 18px;
+      }
+      h1, h2, h3 {
+        font-family: 'Neucha', cursive;
+        font-weight: normal;
+        color: #393939;
       }
       h1 {
-        font-size: 52px;
-        font-weight: normal;
-        margin: 40px;
+        font-size: 100px;
+        margin: 10px 0 20px 0;
+      }
+      h2 {
+        font-size: 36px;
+        margin: 80px 0 0px 0;
+      }
+      h3 {
+        font-size: 24px;
+        margin: 40px 0 0px 0;
       }
       a {
         text-decoration: none;
+        font-weight: bold;
         color: #3C5A99;
+      }
+      b, .b {
+        color: #393939;
+        font-weight: normal;
+      }
+      p {
+        margin: 10px 0;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        width: 720px;
+        margin: 0 auto;
+      }
+      .row {
+        display: block;
+        width: 100%;
+      }
+      .col-4 {
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>CoworkJes</h1>
+    <div class="container">
+      <h1>CoworkJes</h1>
+      <p>Kancelářské prostory se zatraceně stabilním internetem, 12ti pracovními
+        místy, zasedačkou, relaxační zónou, tiskárnou i kávovarem, odkud budete
+        moci od července pracovat na svých projektech.
+        V ceně je parkování zdarma, rychlý optický internet, sdílená knihovnička,
+        kuchyňka s mikrovlnkou nebo také chill out zona.
+      </p>
+        <br><br>
 
-    <p><a href="mailto:coworkjes@gmail.com">coworkjes@gmail.com</a></p>
-    <p><a href="https://www.facebook.com/Coworking-Jesen%C3%ADk-2282157462051139/">facebook</a></p>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/office3.jpg" alt="Coworking kancelář Jeseník">
+        </div>
+        <div class="col-4">
+          <img src="img/office2.jpg" alt="Coworking kancelář Jeseník">
+        </div>
+        <div class="col-4">
+          <img src="img/office1.jpg" alt="Coworking kancelář Jeseník">
+        </div>
+      </div>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20198122-18"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-20198122-18');
-    </script>
+      <div class="row">
+        <div class="col-4">
+          <h3>Day desk</h3>
+          <p>Jednorázová návštěva Cowork Jeseník - pracovní místo ve sdíleném
+            prostoru s ostatními hot desks</p>
+          <p class="b">150Kč/den</p>
+        </div>
+        <div class="col-4">
+          <h3>Hot desk</h3>
+          <p>Pracovní místo ve sdíleném prostoru s ostatními hot desks.
+             Přístup v pracovní hodiny Cowork Centra.</p>
+          <p class="b">1250Kč/měsíc</p>
+        </div>
+        <div class="col-4">
+          <h3>Fixed desk</h3>
+          <p>Vlastní pracovní místo s ergonomickou židlí.
+            Využití zasedací místnosti zdarma. Vlastní klíč.
+          </p>
+          <p class="b">2500Kč/měsíc</p>
+        </div>
+      </div>
 
+      <h2>Napište nám</h2>
+      <p><a href="mailto:coworkjes@gmail.com">coworkjes@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/Coworking-Jesen%C3%ADk-2282157462051139/">facebook</a></p>
+
+      <h2>Kde nás najdete?</h2>
+      <p>Obchodní centrum ALKRON<br>
+        Palackého 1341/2 Jeseník<br>
+        3. patro</p>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20198122-18"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-20198122-18');
+      </script>
+    <div>
   </body>
 </html>
