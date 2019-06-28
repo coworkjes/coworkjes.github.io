@@ -7,6 +7,7 @@
     <meta name="keywords" content="coworking, Jeseník, hub, kancelář">
     <meta name="author" content="coworkJes">
     <link href="https://fonts.googleapis.com/css?family=Neucha|Roboto:300&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="js/index.js"></script>
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>CoworkJes</title>
     <style>
@@ -83,6 +84,11 @@
           padding: 5px 0px;
         }
       }
+      #map {
+        width: 100%;
+        height: 400px;
+        margin: 30px 0;
+      }
     </style>
   </head>
   <body>
@@ -140,8 +146,13 @@
         Palackého 1341/2 Jeseník<br>
         3. patro</p>
 
+      <div id="map"></div>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9hy01KVTrnMRsRxHXec-Wq1RqmwzS8Xo&callback=initMap"></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20198122-18"></script>
       <script>
+        initMap();
+
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
